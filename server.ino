@@ -114,7 +114,7 @@ void loop() {
           client.print("}");
         
           /**
-          
+        
           Serial.print("Humidity: ");
           Serial.print(h);
           Serial.print(" %\t Temperature: ");
