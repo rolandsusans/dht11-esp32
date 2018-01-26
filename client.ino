@@ -51,13 +51,14 @@ public:
         }
         static char result[100];
 
-        strcpy(result,"{\"temperatue\":");
+        strcpy(result,"{ \"data\":{ \"temperature\":");
         strcat(result,cT); // append temperature
         strcat(result,", \"humidity\":"); // append string two to the result.
         strcat(result,hT); // append string two to the result.
-        strcat(result,"}"); // append string two to the result.
+        strcat(result,"} }"); // append string two to the result.
 
         return result;
+
     }
 
 };
@@ -107,7 +108,7 @@ void loop()
         HTTPClient http;// initialize http client
 
         http.begin(payloadUrl);  
-        http.addHeader("Content-Type", "text/json");//Specify content-type header
+        http.addHeader("Content-Type", "application/json");//Specify content-type header
         http.addHeader("Authorization", token);//Specify content-type header
         Measurment* m =  new Measurment();
         char payload[100];
