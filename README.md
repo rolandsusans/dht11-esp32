@@ -1,6 +1,6 @@
 # DHT 11 sensor on ESP32
 ## DHT
-Cheap temperature & humidity sensor for IOT. [Data sheet](http://www.micropik.com/PDF/dht11.pdf)
+Cheap temperature & humidity sensor for IOT. [Data sheet](https://akizukidenshi.com/download/ds/aosong/DHT11.pdf)
 
 ![](http://www.circuitbasics.com/wp-content/uploads/2015/12/DHT11-Pinout-for-three-pin-and-four-pin-types-2.jpg)
 
